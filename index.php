@@ -16,6 +16,9 @@
 
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script src="jquery.js"></script>
+<script src="typed.js"></script>
+
 
 <!-- //js -->
 <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -53,10 +56,35 @@
 											</ul>
 										</div>
 										<div class="wthree_tab_content_pos">
-											<div class="wthree_tab_content_pos_grid">
-
-												<h3>Babatunde Adedolapo A.</h3>
-												<h6>Front-End Developer, Android Developer</h6>
+											<div class="wthree_tab_content_pos_grid" id="name">
+												<div >
+													<h3>Babatunde Adedolapo A.</h3>
+											<span class="element"></span>
+											<script>
+												document.addEventListener('DOMContentLoaded', function(){
+													Typed.new('#typedname', {
+														typeSpeed: 100,
+														// time before typing starts
+														startDelay: 0,
+														// backspacing speed
+														backSpeed: 100,
+														// shuffle the strings
+														shuffle: false,
+														// time before backspacing
+														backDelay: 1000,
+														stringsElement: null,
+														loop: true,
+														showCursor: true,
+														stringsElement: document.getElementById('typed-name')
+													});
+												});
+											</script>
+											<div id="typed-name">
+												<p> A Front-End and Android Developer</p>
+												
+											</div>
+											<span id="typedname"></span>
+										</div>
 												<ul class="address">
 													<li>
 														<ul class="address-text">
@@ -76,6 +104,7 @@
 															<li><a href="mailto:dolapob@mail.com"> dolapob@gmail.com</a></li>
 														</ul>
 													</li>
+													
 													<li>
 														<ul class="address-text">
 															<li><b>WEBSITE </b></li>
@@ -83,7 +112,8 @@
 														</ul>
 													</li>
 													</br>
-													<a href="./pdf/cv.pdf" class="btn btn-info" role="button" download="myCV">Download CV</a>
+													<a href="./pdf/CV.pdf" class="btn btn-info" role="button" download="myCV">Download CV</a>
+													<a href="http://dolapobabs.ng.tn/pdf/CV.pdf" class="btn btn-primary" role="button">View CV</a>
 												</ul>
 											</div>
 										</div>
@@ -99,13 +129,36 @@
 									</div>
 									<div class="agileits_agile_about">
 										<h3>About Me</h3>
-										<div class="col-md-6 agileits_agile_about_left">
-									
-											<p>I'm a 300 level Computer Science Student of the Federal University of Agriculture, Abeokuta. I'm a lover of anything techy. I love to try out new things. </p>
+										<div >
+											<span class="element"></span>
+											<script>
+												document.addEventListener('DOMContentLoaded', function(){
+													Typed.new('#typed', {
+														stringsElement: null,
+	
+														// time before typing starts
+														startDelay: 0,
+														// backspacing speed
+														backSpeed: 0,
+														// shuffle the strings
+														shuffle: false,
+														// time before backspacing
+														backDelay: 1000,
+														loop: true,
+														cursorChar: "..",
+														showCursor: true,
+														stringsElement: document.getElementById('typed-strings')
+													});
+												});
+											</script>
+											<div id="typed-strings">
+												<p> I'm a 300 level Computer Science Student of the Federal University of Agriculture, Abeokuta. I'm a lover of anything techy. I love to try out new things. I believe in Hardwork and consistency.</p>
+												
+											</div>
+											<span id="typed"></span>
 										</div>
-										<div class="col-md-6 agileits_agile_about_right">
-											<h4>I believe in Hardwork and consistency.</h4>
-										</div>
+										
+										
 										<div class="clearfix"> </div>
 										<div class="agileits_skills_grids">
 											<div class="col-md-6 agileits_skills_grid">
@@ -314,13 +367,13 @@
 <!-- //for bootstrap working -->
 <?php
 if(isset($_POST["submit"])){
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "portfolio";
+$hostname = "sql113.ng.tn";
+$username = "ngtn_20279232";
+$password = "dollybabs";
+$dbname = "ngtn_20279232_portfolio";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($hostname, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
