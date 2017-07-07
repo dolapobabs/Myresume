@@ -13,6 +13,8 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="css/swipebox.css">
+<link rel='icon' href='logo.png'>
+
 
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
@@ -32,7 +34,7 @@
 				<div class="w3ls_logo_nav_right">
 					<div class="sap_tabs">
 						<div class="w3ls_logo_nav_left">
-							<h1><a href="index.php">DOLAPOBABS</a></h1>
+							<h1><img src="logo.png"class="img-rounded" height="60px" width="60px"/>  <a href="index.php">DOLAPOBABS</a></h1>
 						</div>
 						<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
 							<div class="resp-tabs-container">
@@ -73,7 +75,7 @@
 														// time before backspacing
 														backDelay: 1000,
 														stringsElement: null,
-														loop: true,
+														loop: false,
 														showCursor: true,
 														stringsElement: document.getElementById('typed-name')
 													});
@@ -112,8 +114,8 @@
 														</ul>
 													</li>
 													</br>
-													<a href="./pdf/CV.pdf" class="btn btn-info" role="button" download="myCV">Download CV</a>
-													<a href="http://dolapobabs.ng.tn/pdf/CV.pdf" class="btn btn-primary" role="button">View CV</a>
+													<!--<a href="./pdf/CV.pdf" class="btn btn-info" role="button" download="myCV">Download CV</a>
+-->													<a href="http://dolapobabs.ng.tn/pdf/CV.pdf" class="btn btn-primary" role="button">View CV</a>
 												</ul>
 											</div>
 										</div>
@@ -240,17 +242,17 @@
 											</div>
 											<div class="col-md-4 agileits_agile_about_portfolio_left">
 												<div class="w3_portfolio_grid view second-effect">
-													<a href="works/work4.png" class="swipebox" title="Just Java App for Andela ">
+													<a href="works/work4.png" class="swipebox" title="Court Counter App for Andela ">
 														<img src="works/work4.png" height="300" width="500" alt=" " class="img-responsive" />
 														<div class="mask">
-															<p>Just Java</p>
+															<p>Court Counter</p>
 														</div>
 													</a>
 												</div>
 											</div>
 											<div class="col-md-4 agileits_agile_about_portfolio_left">
 												<div class="w3_portfolio_grid view second-effect">
-													<a href="works/work3.png" class="swipebox" title=" ">
+													<a href="works/work3.png" class="swipebox" title="Just Java App for Andela ">
 														<img src="works/work3.png" alt=" " class="img-responsive" />
 														<div class="mask">
 															<p>Just Java</p>
@@ -263,7 +265,7 @@
 										<div class="agileits_agile_about_portfolio1">
 											<div class="col-md-12 agileits_agile_about_portfolio_left">
 												<div class="w3_portfolio_grid view second-effect">
-													<a href="works/work2.png" class="swipebox" title="Website developed for Codulab Hackathon: Credits: @Sayo_paul">
+													<a href="works/work2.png" class="swipebox" title="Hackathon by Codulab: Credits: @Sayo_paul">
 														<img src="works/work2.png" alt=" " class="img-responsive" />
 														<div class="mask">
 															<p>Hackathon</p>
@@ -310,7 +312,7 @@
 												</div>
 												<div class="clearfix"> </div>
 												<textarea name="Message" placeholder="Message..." id='message' required=""></textarea>
-												<input name='submit' id='submit' type="submit" value="register">
+												<input name='submit' id='submit' type="submit" value="submit">
 											</form>
 									
 										</div>
@@ -360,7 +362,7 @@
 		</div>
 		</div>
 		<div class="agileits_copyright">
-				<p>© Dolapobabs 2017 . All rights reserved	</a></p>
+				<p>© Dolapobabs 2017 . All rights reserved</p>
 			</div>
 <!-- for bootstrap working -->
 <script src="js/bootstrap.js"></script>
